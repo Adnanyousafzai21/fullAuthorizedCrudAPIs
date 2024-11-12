@@ -3,7 +3,6 @@ import Todos from "../model/todos.js";
 const createTodos = async (req, res, next) => {
     const { subject, description, file } = req.body
     const { id } = req.query
-    console.log("req.user in createto controller", req.user._id)
 
     if (id) {
         try {
